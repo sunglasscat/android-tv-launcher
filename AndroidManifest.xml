@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.droid"
+    android:versionCode="17"
+    android:versionName="1.8.17">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:name=".application.ClientApplication"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        <activity android:name=".activitys.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.Ethernet" />
+        <activity android:name=".activitys.Bluetooth" />
+        <activity android:name=".activitys.SettingCustom" />
+        <activity android:name=".activitys.AppUninstall" />
+        <activity android:name=".activitys.AppAutoRun" />
+        <activity android:name=".speedtest.SpeedTestActivity" />
+
+        <service android:name=".service.MainService" />
+
+        <activity
+            android:name=".eliminateprocess.EliminateMainActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".garbageclear.GarbageClear"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".wifi.WifiActivity" />
+    </application>
+</manifest>
