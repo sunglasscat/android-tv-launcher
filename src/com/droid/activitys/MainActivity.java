@@ -25,8 +25,7 @@ import android.view.View;
 import android.widget.RadioButton;
 
 import com.droid.R;
-import com.droid.activitys.fragment.LocalServiceFragment;
-import com.droid.activitys.fragment.SettingFragment;
+import com.droid.activitys.setting.SettingFragment;
 import com.droid.adapter.MainActivityAdapter;
 import com.droid.application.ClientApplication;
 import com.droid.db.SharedPreferencesUtil;
@@ -36,9 +35,7 @@ import com.droid.utils.NetWorkUtil;
 import com.droid.utils.Tools;
 import com.droid.utils.UpdateManager;
 import com.droid.views.MyViewPager;
-import com.droid.activitys.fragment.AppFragment;
-
-import org.json.JSONException;
+import com.droid.activitys.app.AppFragment;
 
 import java.io.File;
 import java.util.ArrayList;
